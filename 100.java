@@ -79,12 +79,12 @@ public class main {
 			}
 		}
 		
-		for(int i=0; i<numero.length(); i++) 									//ESTE FOR TRANSFORMA EL VECTOR EN UN UNICO NUMERO ENTERO. HACIENDO LAS SIGUIENTES OPERACIONES
-		{																		//numeros[0] * 1000
+		for(int i=0; i<numero.length(); i++) 						//ESTE FOR TRANSFORMA EL VECTOR EN UN UNICO NUMERO ENTERO. HACIENDO LAS SIGUIENTES OPERACIONES
+		{										//numeros[0] * 1000
 			mayor += Character.getNumericValue(numeros[i]) * multiplicador; 	//numeros[1] * 100
-			multiplicador /= 10;												//numeros[2] * 10
-		}																		//numeros[3] * 1
-																				//SUMA CADA RESULTADO Y LO GUARDA EN LA VARIABLE "MAYOR"
+			multiplicador /= 10;							//numeros[2] * 10
+		}										//numeros[3] * 1
+												//SUMA CADA RESULTADO Y LO GUARDA EN LA VARIABLE "MAYOR"
 		return mayor; //DEVOLVER EL NUMERO ORDENADO DE MAYOR A MENOR
 	}
 
@@ -112,12 +112,12 @@ public class main {
 			}
 		}
 		
-		for(int i=0; i<numero.length(); i++) 									//ESTE FOR TRANSFORMA EL VECTOR EN UN UNICO NUMERO ENTERO. HACIENDO LAS SIGUIENTES OPERACIONES
-		{																		//numeros[0] * 1000
+		for(int i=0; i<numero.length(); i++) 						//ESTE FOR TRANSFORMA EL VECTOR EN UN UNICO NUMERO ENTERO. HACIENDO LAS SIGUIENTES OPERACIONES
+		{										//numeros[0] * 1000
 			menor += Character.getNumericValue(numeros[i]) * multiplicador; 	//numeros[1] * 100
-			multiplicador /= 10;												//numeros[2] * 10
-		}																		//numeros[3] * 1
-																				//SUMA CADA RESULTADO Y LO GUARDA EN LA VARIABLE "MENOR"
+			multiplicador /= 10;							//numeros[2] * 10
+		}										//numeros[3] * 1
+												//SUMA CADA RESULTADO Y LO GUARDA EN LA VARIABLE "MENOR"
 		return menor; //DEVOLVER EL NUMERO ORDENADO DE MENOR A MAYOR
 	}
 }
