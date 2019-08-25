@@ -1,4 +1,3 @@
-package Practica;
 import java.util.*;
 
 public class Main
@@ -14,7 +13,7 @@ public class Main
 	{	
 		while(true)
 		{
-			n = scanner.nextShort(); //INGRESAR EL TAMAÑO DEL CUADRADO
+			n = scanner.nextShort(); //INGRESAR EL TAMAÃ‘O DEL CUADRADO
 			scanner.nextLine(); //LIMPIAR BUFFER
 			
 			if(n == 0) break;
