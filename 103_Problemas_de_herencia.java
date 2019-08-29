@@ -7,7 +7,7 @@ public class ProblemasDeHerencia
 	static Scanner scanner = new Scanner(System.in);
 	static final byte coheficiente = 0;
 	static final byte exponente = 1;
-	static final byte tamañoTerreno = 1;
+	static final byte tamaÃ±oTerreno = 1;
 	
 	public static void main(String[] args) 
 	{
@@ -41,7 +41,7 @@ public class ProblemasDeHerencia
 			float exceso = 0; //VARIABLE QUE GUARDA CUANTO SE PASO "Y" DEL LIMITE SUPERIOR DEL TERRENO, PARA NO PISAR TERRENOS VECINOS
 			float diferenciaTerreno = 0; //VARIABLE QUE GUARDA CUANTA DIFERENCIA HAY ENTRE EL TERRENO DE CAIN Y ABEL 
 			
-			baseRectangulos = (float) tamañoTerreno / cantidadRectangulos; //CALCULAR LA BASE QUE TENDRA CADA RECTANGULO
+			baseRectangulos = (float) tamaÃ±oTerreno / cantidadRectangulos; //CALCULAR LA BASE QUE TENDRA CADA RECTANGULO
 			
 			for(int i=0; i<cantidadRectangulos; i++) //RECORRER TODOS LOS RECTANGULOS
 			{
@@ -61,9 +61,9 @@ public class ProblemasDeHerencia
 				
 				if(Y > 0) //TENER EN CUENTA SOLAMENTE LOS VALORES DE "Y" POSITIVOS, PARA NO PISAR TERRENO VECINO
 				{
-					if(Y > tamañoTerreno) //SI "Y" SUPERA EL LIMITE DEL TERRENO
+					if(Y > tamaÃ±oTerreno) //SI "Y" SUPERA EL LIMITE DEL TERRENO
 					{
-						exceso = Y - (float) tamañoTerreno; //CALCULAR EL EXCESO
+						exceso = Y - (float) tamaÃ±oTerreno; //CALCULAR EL EXCESO
 						Y = Y - exceso; //Y RESTARSELO A "Y"
 					}
 					
@@ -73,7 +73,7 @@ public class ProblemasDeHerencia
 				Y = 0; //REINICIAR "Y" PARA EL PROXIMO RECTANGULO
 			}
 			
-			areaTotalAbel = tamañoTerreno - areaTotalCain; //OBTENER EL AREA DE ABEL
+			areaTotalAbel = tamaÃ±oTerreno - areaTotalCain; //OBTENER EL AREA DE ABEL
 			diferenciaTerreno = areaTotalAbel - areaTotalCain; //OBTENER LA DIFERENCIA ENTRE LOS TERRENOS
 			
 			if(diferenciaTerreno < 0) //SOLO QUEREMOS EL VALOR ABSOLUTO. SI LA DIFERENCIA ES NEGATIVA...
